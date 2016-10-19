@@ -1,6 +1,6 @@
 {
   "name": "preact-waypoint",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "minimal port of react-waypoint to preact",
   "repository": {
     "type": "git",
