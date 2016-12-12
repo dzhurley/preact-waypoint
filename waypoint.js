@@ -2,7 +2,7 @@ const { h, Component } = require('preact');
 
 class Waypoint extends Component {
     isInside() {
-        const waypointTop = this.mark.getBoundingClientRect().top;
+        const waypointTop = this.base.getBoundingClientRect().top;
 
         const contextHeight = this.container !== window ?
             this.container.offsetHeight :
@@ -45,8 +45,7 @@ class Waypoint extends Component {
     }
 
     render() {
-        // use mark later to check scroll position against
-        return <span ref={e => this.mark = e} />;
+        return h('span');
     }
 }
 

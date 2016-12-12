@@ -18,9 +18,7 @@
     "babel-eslint": "^7.0.0",
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.9.0",
-    "babel-preset-react": "^6.11.1",
-    "eslint": "^3.2.2",
-    "eslint-plugin-react": "^6.0.0"
+    "eslint": "^3.2.2"
   },
   "scripts": {
     "build": "eslint js && babel waypoint.js --out-file waypoint.build.js"
