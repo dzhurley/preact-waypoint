@@ -9,8 +9,8 @@
   },
   "author": "dzhurley",
   "homepage": "https://github.com/dzhurley/preact-waypoint",
-  "dependencies": {
-    "preact": "^6.3.0"
+  "peerDependencies": {
+    "preact": ">= 6.3.0"
   },
   "devDependencies": {
     "babel-cli": "^6.16.0",
