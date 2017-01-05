@@ -4,13 +4,18 @@ class Waypoint extends Component {
     isInside() {
         const waypointTop = this.base.getBoundingClientRect().top;
 
+        // grab this.props.container's height
         const contextHeight = this.container !== window ?
             this.container.offsetHeight :
             window.innerHeight;
+
+        // grab this.props.container's scrollTop (window is always 0)
         const contextScrollTop = this.container !== window ?
             this.container.getBoundingClientRect().top :
             0;
 
+        // if waypoint is in between container's top and bottom edges
+        // return true, false if above top or below bottom
         return (
             contextScrollTop <= waypointTop &&
             waypointTop <= contextScrollTop + contextHeight
@@ -37,6 +42,8 @@ class Waypoint extends Component {
         // bind before adding as a listener so we can remove later
         this.boundScroller = this.handleScroll.bind(this);
         this.container.addEventListener('scroll', this.boundScroller);
+
+        // possibly call onEnter when mounting if waypoint is visible
         this.handleScroll(null);
     }
 
