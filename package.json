@@ -1,6 +1,6 @@
 {
   "name": "preact-waypoint",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "minimal port of react-waypoint to preact",
   "main": "waypoint.build.js",
   "repository": {
