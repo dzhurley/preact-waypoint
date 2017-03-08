@@ -51,8 +51,8 @@ class Waypoint extends Component {
         this.container.removeEventListener('scroll', this.boundScroller);
     }
 
-    render() {
-        return h('span');
+    render({ children }) {
+        return children.length ? children[0] : h('span');
     }
 }
 
